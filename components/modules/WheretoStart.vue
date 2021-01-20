@@ -12,7 +12,7 @@
     <div class='col2'>
         <div v-html="item.fields.tipsTricks" />
     </div>
-    <div>{{info}}</div>
+    <!-- <div>{{info}}</div> -->
   </div>
 </template>
 
