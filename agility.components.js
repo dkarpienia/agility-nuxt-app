@@ -7,6 +7,7 @@ import TestJumboTron from './components/modules/Jumbotron'
 import ImageLink from './components/modules/ImageLink'
 import ImageSlider from './components/modules/ImageSlider'
 import FeaturedPosts from './components/modules/FeaturedPosts'
+import WheretoStart from './components/modules/WheretoStart'
 
 // Our Agility PageTemplates
 import OneColumnTemplate from './components/templates/OneColumnTemplate'
@@ -20,7 +21,8 @@ export default {
 		PostDetails,
 		ImageLink,
 		ImageSlider,
-		FeaturedPosts
+        FeaturedPosts,
+        WheretoStart
 
     },
     pageTemplateComponents: {

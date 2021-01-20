@@ -8,7 +8,7 @@
       :sharedContent="sharedContent"
       :sitemapFlat="sitemapFlat"
       :sitemapNested="sitemapNested"
-    />
+    /> 
   </div>
 </template>
 
