@@ -12,19 +12,39 @@
     <div class='col2'>
         <div v-html="item.fields.tipsTricks" />
     </div>
+    <div>{{info}}</div>
   </div>
 </template>
 
 <script>
+
+import axios from 'axios'
+
 export default {
+
   props: {
     contentID: Number,
     item: Object,
     page: Object,
     pageInSitemap: Object,
     dynamicPageItem: Object
+  },
+
+  data() {
+    return {
+      info: null
+    }
+  },
+
+  mounted() {
+    axios
+      .get('https://api.coindesk.com/v1/bpi/currentprice.json')
+      .then(response => (this.info = response))
   }
 };
+
+
+
 </script>
 
 <style scoped>
